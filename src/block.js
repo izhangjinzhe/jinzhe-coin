@@ -14,7 +14,6 @@ class Block{
     while (this.Hash.substring(0, difficulty) !== Array(difficulty).fill('0').join('')){
       this.Nonce++
       this.Hash = this.createHash()
-      console.log(this.Hash)
     }
   }
 }
